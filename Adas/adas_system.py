@@ -328,7 +328,6 @@ class ADAS:
         return frame
     def get_lane_decision(self, ego_vehicle_dict, vehicles_dict, ego_speed):
 
-        # ✅ Safely extract from MATLAB py.tuple using list conversion
         ego_lane = str(ego_vehicle_dict["lane"])
         ego_center_list = list(ego_vehicle_dict["center"])
         ego_center_x = float(ego_center_list[0])
